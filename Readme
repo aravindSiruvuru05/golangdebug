@@ -1,0 +1,2 @@
+RUN COMMAND
+docker build -t golangdebug . && docker run -p 8080:8080 -p 2345:2345 -it golangdebug

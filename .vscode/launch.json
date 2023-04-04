@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug Beego in Docker",
+            "type": "go",
+            "request": "attach",
+            "mode": "remote",
+            "port": 2345,
+            "host": "localhost",
+            "cwd": "${workspaceFolder}",
+            "showLog": true
+        }
+    ]
+}  
+
+// when you strt the debugger by clicking on play command in debugger panel, 
+// it will start hit the port 2345 and execute the CMD the we provided in dockerfile which is running our main exec file and boots our server
+//  from now all the requests to the 8080 will be listened by the debugger 
